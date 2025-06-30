@@ -141,7 +141,7 @@ const ItemDetails = (props) => {
                             </Link>
                           </div>
                           <div className="author_list_info">
-                            <Link to="/author">Monica Lucas</Link>
+                            <Link to="/author">Derek Jeter</Link>
                           </div>
                         </div>
                       </div>
