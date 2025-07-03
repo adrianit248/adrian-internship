@@ -47,7 +47,7 @@ const HotCollections = () => {
 
     responsive: [
           {
-              breakpoint: 992,
+              breakpoint: 1200,
               settings: {
                   slidesToShow: 3,
                   slidesToScroll: 1
@@ -61,7 +61,7 @@ const HotCollections = () => {
               }
           },
           {
-              breakpoint: 450,
+              breakpoint: 580,
               settings: {
                   slidesToShow: 1,
                   slidesToScroll: 1
@@ -127,7 +127,7 @@ const HotCollections = () => {
                       </Link>
                     </div>
                     <div className="nft_coll_pp">
-                      <Link to="/author">
+                      <Link to={`/author/${elem.authorId}`} state={{elem: elem}}>
                         <img className="lazy pp-coll" src={elem.authorImage} alt="" />
                       </Link>
                       <i className="fa fa-check"></i>
