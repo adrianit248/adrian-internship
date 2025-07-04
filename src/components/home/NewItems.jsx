@@ -156,7 +156,6 @@ const NewItems = () => {
                       <div className="author_list_pp">
                         <Link
                           to={`/author/${elem.authorId}`}
-                          state={{ elem: elem }}
                           data-bs-toggle="tooltip"
                           data-bs-placement="top"
                           title="Creator: Monica Lucas"

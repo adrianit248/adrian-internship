@@ -352,7 +352,6 @@ const TopSellers = () => {
                     <div className="author_list_pp">
                       <Link
                         to={`/author/${elem.authorId}`}
-                        state={{ elem: elem }}
                       >
                         <img
                           className="lazy pp-author"
@@ -365,7 +364,6 @@ const TopSellers = () => {
                     <div className="author_list_info">
                       <Link
                         to={`/author/${elem.authorId}`}
-                        state={{ elem: elem }}
                       >
                         {elem.authorName}
                       </Link>

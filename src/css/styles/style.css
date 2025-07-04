@@ -536,6 +536,7 @@ header .header-col.mid .social-icons {
 
 #profile_banner {
   min-height: 360px;
+
 }
 
 /* ================================================== */
@@ -13222,9 +13223,8 @@ a.read_more i {
 
 .slick-prev:before, .slick-next:before {
     font-family: 'slick';
-    font-size: 57px !important;
+    font-size: 56px !important;
     line-height: 1;
-    opacity: .75;
     color: white !important;
     -webkit-font-smoothing: antialiased;
     position: absolute;
@@ -13232,6 +13232,7 @@ a.read_more i {
     z-index: 1;
     filter: invert(0) !important;
 }
+
 
 .slick-prev{
   left: 1px !important;
@@ -13242,7 +13243,11 @@ a.read_more i {
 }
 
 .nft_coll{
-  width: 95%;
+  width: 95% !important;
+  margin: 0 auto;
+}
+
+.nft__item{
   margin: 0 auto;
 }
 
@@ -13677,6 +13682,8 @@ a.read_more i {
   -webkit-border-radius: 15px;
   margin-bottom: 25px;
   background: #ffffff;
+  width: 95% !important;
+
 }
 
 .nft__item.style-2,
