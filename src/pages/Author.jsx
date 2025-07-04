@@ -13,7 +13,7 @@ const Author = () => {
   const [loading, setLoading] = useState(false);
   const [thisUser, setThisUser] = useState({});
 
-  // define function getHotCol
+  // define function getThisUser
   const getThisUser = async () => {
     setLoading(true);
     const url = `https://us-central1-nft-cloud-functions.cloudfunctions.net/authors?author=${authorId}`;
