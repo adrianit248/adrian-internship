@@ -4,6 +4,8 @@ import AuthorItems from "../components/author/AuthorItems";
 import { Link, useLocation, useParams } from "react-router-dom";
 import AuthorImage from "../images/author_thumbnail.jpg";
 import axios from "axios";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // `https://us-central1-nft-cloud-functions.cloudfunctions.net/authors?author=${elem.authorId}`
 

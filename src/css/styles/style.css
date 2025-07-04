@@ -13235,11 +13235,11 @@ a.read_more i {
 
 
 .slick-prev{
-  left: 1px !important;
+  left: -15px !important;
 }
 
 .slick-next{
-  right: 1px !important;
+  right: -15px !important;
 }
 
 .nft_coll{
