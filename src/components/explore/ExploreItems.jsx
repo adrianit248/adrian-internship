@@ -88,7 +88,7 @@ const ExploreItems = () => {
             <div className="nft__item">
               <div className="author_list_pp">
                 <Link
-                  to={`/author/${elem.authorId}`} state={{elem: elem}}
+                  to={`/author/${elem.authorId}`}
                   data-bs-toggle="tooltip"
                   data-bs-placement="top"
                 >

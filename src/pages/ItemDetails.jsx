@@ -118,13 +118,16 @@ const ItemDetails = (props) => {
                         <h6>Owner</h6>
                         <div className="item_author">
                           <div className="author_list_pp">
-                            <Link to="/author">
+                            <Link to={`/author/${elem.authorId}`}
+                              state={{ elem: elem }}>
                               <img className="lazy" src={elem.authorImage} alt="" />
                               <i className="fa fa-check"></i>
                             </Link>
                           </div>
                           <div className="author_list_info">
-                            <Link to="/author">Monica Lucas</Link>
+                            <Link 
+                              to={`/author/${elem.authorId}`}
+                              state={{ elem: elem }}>{elem.authorName || 'Derek Jeter'}</Link>
                           </div>
                         </div>
                       </div>
@@ -135,13 +138,15 @@ const ItemDetails = (props) => {
                         <h6>Creator</h6>
                         <div className="item_author">
                           <div className="author_list_pp">
-                            <Link to="/author">
+                            <Link to={`/author/${elem.authorId}`}
+                              state={{ elem: elem }}>
                               <img className="lazy" src={elem.authorImage} alt="" />
                               <i className="fa fa-check"></i>
                             </Link>
                           </div>
                           <div className="author_list_info">
-                            <Link to="/author">Derek Jeter</Link>
+                            <Link to={`/author/${elem.authorId}`}
+                              state={{ elem: elem }}>{elem.authorName || 'Derek Jeter'}</Link>
                           </div>
                         </div>
                       </div>
