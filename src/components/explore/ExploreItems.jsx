@@ -52,7 +52,7 @@ const ExploreItems = () => {
 
     setTimeout(() => {
       setLoading(false)
-    }, 1000);
+    }, 500);
   }
 
   useEffect(() => {
@@ -63,7 +63,6 @@ const ExploreItems = () => {
       }
       getExplore()
     }, [url]);
-
 
 
   return (
@@ -80,7 +79,7 @@ const ExploreItems = () => {
       ? new Array(slicer).fill(0).map((_, index) => 
           <div key={index} className="col-lg-3 col-md-6 col-sm-6 col-xs-12"><div className="skeleton-box" style={{width: "100%", height: "400px"}}></div></div>
         ) 
-      : explore.slice(slicer*-1).map((elem, index) => (
+      : explore.slice(0,slicer).map((elem, index) => (
           <div
             key={index}
             className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12"
